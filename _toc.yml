@@ -5,10 +5,7 @@ format: jb-book
 root: SPDis-2021-22
 defaults:
   titlesonly: True
-parts:
-- caption: "Preâmbulo"
-  chapters:
+chapters:
   - file: "docs/0.Apresenta\xE7\xE3o"
-- caption: "Aulas"
-  chapters:
   - file: "docs/S1/UC"
+  - file: "docs/S1/Lab0"

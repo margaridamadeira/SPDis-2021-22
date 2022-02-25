@@ -1,5 +1,5 @@
 (UC)=
-# Apresentação 
+# Apresentação da unidade curricular
 
 ## Objetivos da unidade curricular
 

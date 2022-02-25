@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apresentação da unidade curricular &#8212; Sistemas Paralelos e Distribuídos 2021-2022</title>
+    <title>Lab0 &#8212; Sistemas Paralelos e Distribuídos 2021-2022</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,10 +52,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://margaridamadeira.github.io/SPDis-2021-22/docs/S1/UC.html" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://margaridamadeira.github.io/SPDis-2021-22/docs/S1/Lab0.html" />
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Pesquisar" href="../../search.html" />
-    <link rel="prev" title="Antevisão" href="../0.Apresenta%C3%A7%C3%A3o.html" />
+    <link rel="prev" title="Apresentação da unidade curricular" href="UC.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="pt">
     
@@ -92,22 +94,20 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Pesquise este livro ..." aria-label="Pesquise este livro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../0.Apresenta%C3%A7%C3%A3o.html">
    Antevisão
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Aulas
- </span>
-</p>
-<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="UC.html">
+   Apresentação da unidade curricular
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Apresentação da unidade curricular
+   Lab0
   </a>
  </li>
 </ul>
@@ -151,7 +151,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/docs/S1/UC.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/docs/S1/Lab0.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Baixar arquivo fonte" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -182,41 +182,31 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#objetivos-da-unidade-curricular">
-   Objetivos da unidade curricular
+  <a class="reference internal nav-link" href="#objetivos-de-aprendizagem">
+   Objetivos de aprendizagem
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pre-requisitos">
-   Pré-requisitos
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#funcionamento-da-unidade-curricular">
-   Funcionamento da unidade curricular
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#avaliacao">
-   Avaliação
+  <a class="reference internal nav-link" href="#caso-de-estudo">
+   Caso de estudo
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#entregas-atrasadas">
-     Entregas atrasadas
+    <a class="reference internal nav-link" href="#detalhes-de-implementacao">
+     Detalhes de implementação
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nota-final">
-     Nota final
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#politica-de-integridade">
-     Política de integridade
+    <a class="reference internal nav-link" href="#exemplo-a">
+     Exemplo A
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etapas">
+   Etapas
+  </a>
  </li>
 </ul>
 
@@ -228,7 +218,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Apresentação da unidade curricular</h1>
+                <h1>Lab0</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -239,41 +229,31 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#objetivos-da-unidade-curricular">
-   Objetivos da unidade curricular
+  <a class="reference internal nav-link" href="#objetivos-de-aprendizagem">
+   Objetivos de aprendizagem
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pre-requisitos">
-   Pré-requisitos
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#funcionamento-da-unidade-curricular">
-   Funcionamento da unidade curricular
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#avaliacao">
-   Avaliação
+  <a class="reference internal nav-link" href="#caso-de-estudo">
+   Caso de estudo
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#entregas-atrasadas">
-     Entregas atrasadas
+    <a class="reference internal nav-link" href="#detalhes-de-implementacao">
+     Detalhes de implementação
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nota-final">
-     Nota final
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#politica-de-integridade">
-     Política de integridade
+    <a class="reference internal nav-link" href="#exemplo-a">
+     Exemplo A
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etapas">
+   Etapas
+  </a>
  </li>
 </ul>
 
@@ -284,57 +264,68 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="apresentacao-da-unidade-curricular">
-<span id="uc"></span><h1>Apresentação da unidade curricular<a class="headerlink" href="#apresentacao-da-unidade-curricular" title="Link permanente para este título">¶</a></h1>
-<div class="section" id="objetivos-da-unidade-curricular">
-<h2>Objetivos da unidade curricular<a class="headerlink" href="#objetivos-da-unidade-curricular" title="Link permanente para este título">¶</a></h2>
-<p>No final da unidade, os alunos deverão:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="lab0">
+<span id="id1"></span><h1>Lab0<a class="headerlink" href="#lab0" title="Link permanente para este título">¶</a></h1>
+<div class="section" id="objetivos-de-aprendizagem">
+<h2>Objetivos de aprendizagem<a class="headerlink" href="#objetivos-de-aprendizagem" title="Link permanente para este título">¶</a></h2>
+<p>Com este guião, pretende-se</p>
 <ul class="simple">
-<li><p>Ser capazes de tipificar as diferentes abordagens ao processamento paralelo e distribuído, identificando os principais sistemas de suporte à construção de soluções;</p></li>
-<li><p>Ter experiência prática da implementação de casos simples;</p></li>
-<li><p>Dominar os fundamentos de sistemas distribuídos, nomeadamente comunicação, processos, gestão de nomes, segurança, tolerância de faltas;</p></li>
-<li><p>Distinguir os conceitos associados ao desenho e implementação de algoritmos distribuídos, nomeadamente sincronização de processos distribuídos mediante a ordenação de eventos, observação e construção de estados globais, coordenação e consenso;</p></li>
-<li><p>Compreender os conceitos associados à partilha de dados, nomeadamente transações e controlo de concorrência, transações distribuídas, replicação e consistência.</p></li>
+<li><p>rever a programação concorrente;</p></li>
+<li><p>introduzir o desenho de soluções paralelas;</p></li>
+<li><p>sensibilizar para a necessidade de usar métricas de desempenho.</p></li>
 </ul>
 </div>
-<div class="section" id="pre-requisitos">
-<h2>Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Link permanente para este título">¶</a></h2>
-<p>Os alunos são incentivados a rever os conceitos fundamentais das unidades curriculares:</p>
-<ul class="simple">
-<li><p>Arquitetura de Computadores</p></li>
-<li><p>Programação Imperativa</p></li>
-<li><p>Programação orientada a objetos</p></li>
-<li><p>Redes de computadores I e II</p></li>
-<li><p>Sistemas Operativos</p></li>
-</ul>
+<div class="section" id="caso-de-estudo">
+<h2>Caso de estudo<a class="headerlink" href="#caso-de-estudo" title="Link permanente para este título">¶</a></h2>
+<p>Os números primos são interessantes, em parte pela suas aplicações criptográficas.
+No presente caso, vamos usar o cálculo ou determinação de números primos para exercitar a programação concorrente.
+Pretendemos um ficheiro com os <span class="math notranslate nohighlight">\(n\)</span> primeiros números primos, um por linha, por ordem crescente.</p>
+<div class="section" id="detalhes-de-implementacao">
+<h3>Detalhes de implementação<a class="headerlink" href="#detalhes-de-implementacao" title="Link permanente para este título">¶</a></h3>
+<p>O programa deve receber um número <span class="math notranslate nohighlight">\(n\)</span> e uma string <span class="math notranslate nohighlight">\(nome-ficheiro\)</span> e escrever no ficheiro <span class="math notranslate nohighlight">\(nome-ficheiro\)</span> os primeiros <span class="math notranslate nohighlight">\(n\)</span> números primos, um número por linha, por ordem crescente.</p>
 </div>
-<div class="section" id="funcionamento-da-unidade-curricular">
-<h2>Funcionamento da unidade curricular<a class="headerlink" href="#funcionamento-da-unidade-curricular" title="Link permanente para este título">¶</a></h2>
-<p>Aulas teóricas com discussão ou exposição de resumos dos temas.</p>
-<p>Aulas práticas:</p>
-<ul class="simple">
-<li><p>Guias práticos de introdução de tecnologias</p></li>
-<li><p>Projeto prático</p></li>
-</ul>
+<div class="section" id="exemplo-a">
+<h3>Exemplo A<a class="headerlink" href="#exemplo-a" title="Link permanente para este título">¶</a></h3>
+<p><em>Input</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="n">p5</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
 </div>
-<div class="section" id="avaliacao">
-<h2>Avaliação<a class="headerlink" href="#avaliacao" title="Link permanente para este título">¶</a></h2>
-<p>Ao longo do semestre vão sendo apresentados temas e propostos trabalhos e atividades, que são pontuados. A nota de frequência resulta da relação entre os pontos obtidos e os pontos possíveis.</p>
-<div class="section" id="entregas-atrasadas">
-<h3>Entregas atrasadas<a class="headerlink" href="#entregas-atrasadas" title="Link permanente para este título">¶</a></h3>
-<p>Para cada elemento avaliado é definido o prazo de entrega.
-Após esse prazo, cada dia (útil ou não) ou parte de dia é penalizado em 20% da nota.</p>
+<p><em>Output</em>
+O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</span></code> contém:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">5</span>
+<span class="mi">7</span>
+<span class="mi">11</span>
+</pre></div>
 </div>
-<div class="section" id="nota-final">
-<h3>Nota final<a class="headerlink" href="#nota-final" title="Link permanente para este título">¶</a></h3>
-<p>A nota de frequência contribui em 60% para a nota final e o exame contribui com os restantes 40%.</p>
 </div>
-<div class="section" id="politica-de-integridade">
-<h3>Política de integridade<a class="headerlink" href="#politica-de-integridade" title="Link permanente para este título">¶</a></h3>
-<p>Trabalhamos ao abrigo do <a class="reference internal" href="CodHonra.html#codhonra"><span class="std std-ref">Código de honra</span></a>.</p>
-<p>É permitido: discussão dos materiais das aulas, enunciados dos trabalhos e conceitos abordados.</p>
-<p><em>Não</em> é permitido: partilha de detalhes de implementação, código, algoritmos, pseudo-código ou algo relacionado com o desenvolvimento de (re)soluções.</p>
 </div>
+<div class="section" id="etapas">
+<h2>Etapas<a class="headerlink" href="#etapas" title="Link permanente para este título">¶</a></h2>
+<p>Estude o caso, seguindo as seguintes etapas:</p>
+<ol class="simple">
+<li><p>Defina o caso de estudo.</p></li>
+<li><p>Crie os casos de teste.</p></li>
+<li><p>Desenhe/escolha um algoritmo para o presente caso de estudo. Para cada algoritmo:</p>
+<ol class="simple">
+<li><p>identifique as vantagens</p></li>
+<li><p>identifique limitações.</p></li>
+</ol>
+</li>
+<li><p>Implemente num programa sequencial uma solução para este caso.</p>
+<ol class="simple">
+<li><p>Escolha os valores com que vai testar a sua solução, justificando a escolha.</p></li>
+<li><p>Meça o desempenho da sua solução, e avalie esse desempenho.</p></li>
+</ol>
+</li>
+<li><p>Para uma implementação concorrente:</p>
+<ol class="simple">
+<li><p>Identifique constrangimentos</p></li>
+<li><p>Proponha uma alternativa para obviar esses constrangimentos.</p></li>
+</ol>
+</li>
+</ol>
 </div>
 </div>
 
@@ -363,11 +354,11 @@ Após esse prazo, cada dia (útil ou não) ou parte de dia é penalizado em 20% 
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../0.Apresenta%C3%A7%C3%A3o.html" title="anterior page">
+    <a class='left-prev' id="prev-link" href="UC.html" title="anterior page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Antevisão</p>
+            <p class="prev-next-title">Apresentação da unidade curricular</p>
         </div>
     </a>
 </div>
