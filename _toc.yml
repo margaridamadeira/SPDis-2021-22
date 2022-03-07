@@ -3,9 +3,14 @@
 
 format: jb-book
 root: SPDis-2021-22
-defaults:
-  titlesonly: True
-chapters:
+parts:
+- caption: "Início"
+  chapters:
   - file: "docs/0.Apresenta\xE7\xE3o"
+- caption: S1
+  chapters:
   - file: "docs/S1/UC"
   - file: "docs/S1/Lab0"
+- caption: S2
+  chapters:
+  - file: "docs/S2/Lab1"
