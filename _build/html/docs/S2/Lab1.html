@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab0 &#8212; Sistemas Paralelos e Distribuídos 2021-2022</title>
+    <title>Lab1 &#8212; Sistemas Paralelos e Distribuídos 2021-2022</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,11 +54,10 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="canonical" href="https://margaridamadeira.github.io/SPDis-2021-22/docs/S1/Lab0.html" />
+    <link rel="canonical" href="https://margaridamadeira.github.io/SPDis-2021-22/docs/S2/Lab1.html" />
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Pesquisar" href="../../search.html" />
-    <link rel="next" title="Lab1" href="../S2/Lab1.html" />
-    <link rel="prev" title="Apresentação da unidade curricular" href="UC.html" />
+    <link rel="prev" title="Lab0" href="../S1/Lab0.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="pt">
     
@@ -112,14 +111,14 @@ const thebe_selector_output = ".output, .cell_output"
   S1
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="UC.html">
+  <a class="reference internal" href="../S1/UC.html">
    Apresentação da unidade curricular
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../S1/Lab0.html">
    Lab0
   </a>
  </li>
@@ -129,9 +128,9 @@ const thebe_selector_output = ".output, .cell_output"
   S2
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../S2/Lab1.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Lab1
   </a>
  </li>
@@ -176,7 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/docs/S1/Lab0.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/docs/S2/Lab1.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Baixar arquivo fonte" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -207,6 +206,11 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivo-funcional">
+   Objetivo funcional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#objetivos-de-aprendizagem">
    Objetivos de aprendizagem
   </a>
@@ -226,11 +230,31 @@ const thebe_selector_output = ".output, .cell_output"
      Exemplo A
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#casos-a-estudar">
+     Casos a estudar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-entregar">
+     A entregar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cotacao-global-em-pontos">
+     Cotação global (em pontos)
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#etapas">
-   Etapas
+  <a class="reference internal nav-link" href="#webgrafia-inicial">
+   Webgrafia inicial
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rubicas-de-avaliacao">
+   Rubicas de avaliação
   </a>
  </li>
 </ul>
@@ -243,7 +267,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lab0</h1>
+                <h1>Lab1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -253,6 +277,11 @@ const thebe_selector_output = ".output, .cell_output"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivo-funcional">
+   Objetivo funcional
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#objetivos-de-aprendizagem">
    Objetivos de aprendizagem
@@ -273,11 +302,31 @@ const thebe_selector_output = ".output, .cell_output"
      Exemplo A
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#casos-a-estudar">
+     Casos a estudar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-entregar">
+     A entregar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cotacao-global-em-pontos">
+     Cotação global (em pontos)
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#etapas">
-   Etapas
+  <a class="reference internal nav-link" href="#webgrafia-inicial">
+   Webgrafia inicial
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rubicas-de-avaliacao">
+   Rubicas de avaliação
   </a>
  </li>
 </ul>
@@ -289,16 +338,18 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="lab0">
-<span id="id1"></span><h1>Lab0<a class="headerlink" href="#lab0" title="Link permanente para este título">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="lab1">
+<span id="id1"></span><h1>Lab1<a class="headerlink" href="#lab1" title="Link permanente para este título">¶</a></h1>
+<p><em>Tema incial</em>: Números primos</p>
+<div class="section" id="objetivo-funcional">
+<h2>Objetivo funcional<a class="headerlink" href="#objetivo-funcional" title="Link permanente para este título">¶</a></h2>
+<p>Pretendemos um ficheiro com os <span class="math notranslate nohighlight">\(n\)</span> primeiros números primos, um por linha, por ordem crescente.</p>
+</div>
 <div class="section" id="objetivos-de-aprendizagem">
 <h2>Objetivos de aprendizagem<a class="headerlink" href="#objetivos-de-aprendizagem" title="Link permanente para este título">¶</a></h2>
-<p>Com este guião, pretende-se</p>
-<ul class="simple">
-<li><p>rever a programação concorrente;</p></li>
-<li><p>introduzir o desenho de soluções paralelas;</p></li>
-<li><p>sensibilizar para a necessidade de usar métricas de desempenho.</p></li>
-</ul>
+<p>• Ensaio de abordagens de paralelização
+• Avaliação de desempenho e documentação da paralelização
+• Familiarização com as abordagens de implementação sequencial e paralelas.</p>
 </div>
 <div class="section" id="caso-de-estudo">
 <h2>Caso de estudo<a class="headerlink" href="#caso-de-estudo" title="Link permanente para este título">¶</a></h2>
@@ -325,32 +376,41 @@ O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</
 </pre></div>
 </div>
 </div>
+<div class="section" id="casos-a-estudar">
+<h3>Casos a estudar<a class="headerlink" href="#casos-a-estudar" title="Link permanente para este título">¶</a></h3>
+<p>0 - Implementação sequencial
+1 - Implementação paralela usando tarefas</p>
 </div>
-<div class="section" id="etapas">
-<h2>Etapas<a class="headerlink" href="#etapas" title="Link permanente para este título">¶</a></h2>
-<p>Estude o caso, seguindo as seguintes etapas:</p>
-<ol class="simple">
-<li><p>Defina o caso de estudo.</p></li>
-<li><p>Crie os casos de teste.</p></li>
-<li><p>Desenhe/escolha um algoritmo para o presente caso de estudo. Para cada algoritmo:</p>
-<ol class="simple">
-<li><p>identifique as vantagens</p></li>
-<li><p>identifique limitações.</p></li>
-</ol>
-</li>
-<li><p>Implemente num programa sequencial uma solução para este caso.</p>
-<ol class="simple">
-<li><p>Escolha os valores com que vai testar a sua solução, justificando a escolha.</p></li>
-<li><p>Meça o desempenho da sua solução, e avalie esse desempenho.</p></li>
-</ol>
-</li>
-<li><p>Para uma implementação concorrente:</p>
-<ol class="simple">
-<li><p>Identifique constrangimentos</p></li>
-<li><p>Proponha uma alternativa para obviar esses constrangimentos.</p></li>
-</ol>
-</li>
-</ol>
+<div class="section" id="a-entregar">
+<h3>A entregar<a class="headerlink" href="#a-entregar" title="Link permanente para este título">¶</a></h3>
+<ul class="simple">
+<li><p>Relatório e código</p></li>
+<li><p>Uma semana (até ao início da aula seguinte)</p></li>
+</ul>
+</div>
+<div class="section" id="cotacao-global-em-pontos">
+<h3>Cotação global (em pontos)<a class="headerlink" href="#cotacao-global-em-pontos" title="Link permanente para este título">¶</a></h3>
+<p>• casos sequencial e paralelo: 5 pts
+• qualidade do relatório: 5 pts</p>
+</div>
+</div>
+<div class="section" id="webgrafia-inicial">
+<h2>Webgrafia inicial<a class="headerlink" href="#webgrafia-inicial" title="Link permanente para este título">¶</a></h2>
+<p><a id="1">[1]</a> <a class="reference external" href="https://en.wikipedia.org/wiki/Prime_number">https://en.wikipedia.org/wiki/Prime_number</a></p>
+<p><a id="2">[2]</a> <a class="reference external" href="https://mathworld.wolfram.com/PrimeNumber.html">https://mathworld.wolfram.com/PrimeNumber.html</a></p>
+<p><a id="3">[3]</a> <a class="reference external" href="https://sapientia.ualg.pt/handle/10400.1/14941">https://sapientia.ualg.pt/handle/10400.1/14941</a></p>
+</div>
+<div class="section" id="rubicas-de-avaliacao">
+<h2>Rubicas de avaliação<a class="headerlink" href="#rubicas-de-avaliacao" title="Link permanente para este título">¶</a></h2>
+<p>Qualidade do relatório</p>
+<ul class="simple">
+<li><p>Forma: estrutura adequada, correção (ortográfica e gramatical) da linguagem, referências no texto, bibliografia, figuras</p></li>
+<li><p>Conteúdo
+descrição da metodologia
+descrição da estratégia de implementação
+avaliação de desempenho - tempo de execução, aceleração, eficiência, escalabilidade ou rácio RC
+discussão dos resultados</p></li>
+</ul>
 </div>
 </div>
 
@@ -367,7 +427,7 @@ O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs/S1"
+            path: "./docs/S2"
         },
         predefinedOutput: true
     }
@@ -379,19 +439,12 @@ O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="UC.html" title="anterior page">
+    <a class='left-prev' id="prev-link" href="../S1/Lab0.html" title="anterior page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Apresentação da unidade curricular</p>
+            <p class="prev-next-title">Lab0</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../S2/Lab1.html" title="próximo page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">próximo</p>
-        <p class="prev-next-title">Lab1</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
