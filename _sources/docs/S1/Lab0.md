@@ -17,7 +17,7 @@ Pretendemos um ficheiro com os $n$ primeiros números primos, um por linha, por 
 
 ### Detalhes de implementação
 
-O programa deve receber um número $n$ e uma string $nome-ficheiro$ e escrever no ficheiro $nome-ficheiro$ os primeiros $n$ números primos, um número por linha, por ordem crescente.
+O programa deve receber um número $n$ e uma string `nome-ficheiro` e escrever no ficheiro `nome-ficheiro` os primeiros $n$ números primos, um número por linha, por ordem crescente.
 
 ### Exemplo A
 
