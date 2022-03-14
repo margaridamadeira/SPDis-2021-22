@@ -1,12 +1,12 @@
 ---
 title: "Lab1"
-date: "2 de março de 2021"
+date: "2 de março de 2022"
 author: "Margarida Madeira e Moura"
 ---
 (Lab1)=
 # Lab1
 
-*Tema incial*: Números primos
+*Tema inicial*: Números primos
 
 ## Objetivo funcional
 Pretendemos um ficheiro com os $n$ primeiros números primos, um por linha, por ordem crescente.
@@ -14,7 +14,9 @@ Pretendemos um ficheiro com os $n$ primeiros números primos, um por linha, por 
 ## Objetivos de aprendizagem
 
 • Ensaio de abordagens de paralelização 
-• Avaliação de desempenho e documentação da paralelização
+
+• **Avaliação de desempenho** e documentação da paralelização
+
 • Familiarização com as abordagens de implementação sequencial e paralelas.
 
 ## Caso de estudo
@@ -48,16 +50,19 @@ O ficheiro `p5.txt` contém:
 ### Casos a estudar
 
 0 - Implementação sequencial
+
 1 - Implementação paralela usando tarefas
 
 
 ### A entregar
 - Relatório e código 
+
 - Uma semana (até ao início da aula seguinte)
 
 ### Cotação global (em pontos)
 
 • casos sequencial e paralelo: 5 pts
+
 • qualidade do relatório: 5 pts
 
 
@@ -70,14 +75,18 @@ O ficheiro `p5.txt` contém:
 <a id="3">[3]</a> https://sapientia.ualg.pt/handle/10400.1/14941
 
 
-## Rubicas de avaliação
+## Rubricas de avaliação
 
 Qualidade do relatório
-
- - Forma: estrutura adequada, correção (ortográfica e gramatical) da linguagem, referências no texto, bibliografia, figuras
- - Conteúdo
-    descrição da metodologia
-    descrição da estratégia de implementação
-    avaliação de desempenho - tempo de execução, aceleração, eficiência, escalabilidade ou rácio RC
-    discussão dos resultados
+ - Forma: 
+   + estrutura adequada, 
+   + correção (ortográfica e gramatical) da linguagem, 
+   + referências no texto, 
+   + bibliografia, 
+   + figuras
+ - Conteúdo:
+   + descrição da metodologia
+   + descrição da estratégia de implementação
+   + avaliação de desempenho - tempo de execução, aceleração, eficiência, escalabilidade ou rácio RC
+   + discussão dos resultados
 

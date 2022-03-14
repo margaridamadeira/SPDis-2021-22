@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab1 &#8212; Sistemas Paralelos e Distribuídos 2021-2022</title>
+    <title>Lab2 &#8212; Sistemas Paralelos e Distribuídos 2021-2022</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,11 +54,10 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="canonical" href="https://margaridamadeira.github.io/SPDis-2021-22/docs/S2/Lab1.html" />
+    <link rel="canonical" href="https://margaridamadeira.github.io/SPDis-2021-22/docs/S3/Lab2.html" />
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Pesquisar" href="../../search.html" />
-    <link rel="next" title="Lab2" href="../S3/Lab2.html" />
-    <link rel="prev" title="Lab0" href="../S1/Lab0.html" />
+    <link rel="prev" title="Lab1" href="../S2/Lab1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="pt">
     
@@ -129,9 +128,9 @@ const thebe_selector_output = ".output, .cell_output"
   S2
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../S2/Lab1.html">
    Lab1
   </a>
  </li>
@@ -141,9 +140,9 @@ const thebe_selector_output = ".output, .cell_output"
   S3
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../S3/Lab2.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Lab2
   </a>
  </li>
@@ -188,7 +187,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/docs/S2/Lab1.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/docs/S3/Lab2.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Baixar arquivo fonte" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -234,18 +233,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#detalhes-de-implementacao">
-     Detalhes de implementação
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exemplo-a">
-     Exemplo A
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#casos-a-estudar">
-     Casos a estudar
+    <a class="reference internal nav-link" href="#metodologia-sugerida">
+     Metodologia sugerida
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -261,8 +250,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#webgrafia-inicial">
-   Webgrafia inicial
+  <a class="reference internal nav-link" href="#webgrafia-deste-exercicio">
+   Webgrafia deste exercício
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -280,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lab1</h1>
+                <h1>Lab2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -306,18 +295,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#detalhes-de-implementacao">
-     Detalhes de implementação
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exemplo-a">
-     Exemplo A
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#casos-a-estudar">
-     Casos a estudar
+    <a class="reference internal nav-link" href="#metodologia-sugerida">
+     Metodologia sugerida
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -333,8 +312,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#webgrafia-inicial">
-   Webgrafia inicial
+  <a class="reference internal nav-link" href="#webgrafia-deste-exercicio">
+   Webgrafia deste exercício
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -351,89 +330,78 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="lab1">
-<span id="id1"></span><h1>Lab1<a class="headerlink" href="#lab1" title="Link permanente para este título">¶</a></h1>
-<p><em>Tema inicial</em>: Números primos</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="lab2">
+<span id="id1"></span><h1>Lab2<a class="headerlink" href="#lab2" title="Link permanente para este título">¶</a></h1>
+<p><em>Tema incial</em>: Números primos</p>
 <div class="section" id="objetivo-funcional">
 <h2>Objetivo funcional<a class="headerlink" href="#objetivo-funcional" title="Link permanente para este título">¶</a></h2>
 <p>Pretendemos um ficheiro com os <span class="math notranslate nohighlight">\(n\)</span> primeiros números primos, um por linha, por ordem crescente.</p>
 </div>
 <div class="section" id="objetivos-de-aprendizagem">
 <h2>Objetivos de aprendizagem<a class="headerlink" href="#objetivos-de-aprendizagem" title="Link permanente para este título">¶</a></h2>
-<p>• Ensaio de abordagens de paralelização</p>
-<p>• <strong>Avaliação de desempenho</strong> e documentação da paralelização</p>
-<p>• Familiarização com as abordagens de implementação sequencial e paralelas.</p>
+<p>• Desenho de programas paralelos</p>
 </div>
 <div class="section" id="caso-de-estudo">
 <h2>Caso de estudo<a class="headerlink" href="#caso-de-estudo" title="Link permanente para este título">¶</a></h2>
-<p>Os números primos são interessantes, em parte pela suas aplicações criptográficas.
-No presente caso, vamos usar o cálculo ou determinação de números primos para exercitar a programação concorrente.
-Pretendemos um ficheiro com os <span class="math notranslate nohighlight">\(n\)</span> primeiros números primos, um por linha, por ordem crescente.</p>
-<div class="section" id="detalhes-de-implementacao">
-<h3>Detalhes de implementação<a class="headerlink" href="#detalhes-de-implementacao" title="Link permanente para este título">¶</a></h3>
-<p>O programa deve receber um número <span class="math notranslate nohighlight">\(n\)</span> e uma string <code class="docutils literal notranslate"><span class="pre">nome-ficheiro</span></code> e escrever no ficheiro <code class="docutils literal notranslate"><span class="pre">nome-ficheiro</span></code> os primeiros <span class="math notranslate nohighlight">\(n\)</span> números primos, um número por linha, por ordem crescente.</p>
-</div>
-<div class="section" id="exemplo-a">
-<h3>Exemplo A<a class="headerlink" href="#exemplo-a" title="Link permanente para este título">¶</a></h3>
-<p><em>Input</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="n">p5</span><span class="o">.</span><span class="n">txt</span>
-</pre></div>
-</div>
-<p><em>Output</em>
-O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</span></code> contém:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
-<span class="mi">3</span>
-<span class="mi">5</span>
-<span class="mi">7</span>
-<span class="mi">11</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="casos-a-estudar">
-<h3>Casos a estudar<a class="headerlink" href="#casos-a-estudar" title="Link permanente para este título">¶</a></h3>
-<p>0 - Implementação sequencial</p>
-<p>1 - Implementação paralela usando tarefas</p>
+<p>Tendo uma implementação sequencial de referência para a determinação dos números primos e procedido a uma implementação paralela usando os conceitos anteriores de programação concorrente e</p>
+<p>tendo feito a avaliação de desempenho dessa implementação</p>
+<p>Siga as etapas do desenho manual de programas paralelos e reveja a sua proposta de implementação paralela.</p>
+<div class="section" id="metodologia-sugerida">
+<h3>Metodologia sugerida<a class="headerlink" href="#metodologia-sugerida" title="Link permanente para este título">¶</a></h3>
+<p>Partindo da implementação sequencial de referência</p>
+<ol class="simple">
+<li><p>Na <em>Definição do problema</em>, considere</p>
+<ul class="simple">
+<li><p>Soluções algorítmicas possíveis</p></li>
+<li><p>Zonas de maior carga (usando uma ferramenta de <em>profiling</em> geral como <em>gprof</em> ou <em>gcov</em>)</p></li>
+<li><p>Estrangulamentos</p></li>
+</ul>
+</li>
+<li><p>Considere a adotação de <em>Decomposição</em></p>
+<ul class="simple">
+<li><p>Domínio</p></li>
+<li><p>Funcional</p></li>
+</ul>
+</li>
+<li><p>Analise a <em>Comunicação</em>, considerando</p>
+<ul class="simple">
+<li><p>Transferência de dados</p></li>
+<li><p>Sincronização</p></li>
+<li><p>Dependência de dados</p></li>
+</ul>
+</li>
+<li><p>No <em>Mapeamento</em>, considere</p>
+<ul class="simple">
+<li><p>Granularidade</p></li>
+<li><p>Aglomeração e balanceamento de carga</p></li>
+</ul>
+</li>
+</ol>
 </div>
 <div class="section" id="a-entregar">
 <h3>A entregar<a class="headerlink" href="#a-entregar" title="Link permanente para este título">¶</a></h3>
-<ul class="simple">
-<li><p>Relatório e código</p></li>
-<li><p>Uma semana (até ao início da aula seguinte)</p></li>
-</ul>
+<p>Até ao fim de dia 21 de Março, entregar pela Tutoria Eletrónica o relatório revisto.</p>
 </div>
 <div class="section" id="cotacao-global-em-pontos">
 <h3>Cotação global (em pontos)<a class="headerlink" href="#cotacao-global-em-pontos" title="Link permanente para este título">¶</a></h3>
-<p>• casos sequencial e paralelo: 5 pts</p>
-<p>• qualidade do relatório: 5 pts</p>
+<p>• qualidade do relatório: 12 pts</p>
 </div>
 </div>
-<div class="section" id="webgrafia-inicial">
-<h2>Webgrafia inicial<a class="headerlink" href="#webgrafia-inicial" title="Link permanente para este título">¶</a></h2>
-<p><a id="1">[1]</a> <a class="reference external" href="https://en.wikipedia.org/wiki/Prime_number">https://en.wikipedia.org/wiki/Prime_number</a></p>
-<p><a id="2">[2]</a> <a class="reference external" href="https://mathworld.wolfram.com/PrimeNumber.html">https://mathworld.wolfram.com/PrimeNumber.html</a></p>
-<p><a id="3">[3]</a> <a class="reference external" href="https://sapientia.ualg.pt/handle/10400.1/14941">https://sapientia.ualg.pt/handle/10400.1/14941</a></p>
+<div class="section" id="webgrafia-deste-exercicio">
+<h2>Webgrafia deste exercício<a class="headerlink" href="#webgrafia-deste-exercicio" title="Link permanente para este título">¶</a></h2>
+<p><a id="1">[1]</a> <a class="reference external" href="https://tutoria.ualg.pt/2021/pluginfile.php/201772/mod_folder/content/0/3.Parallel.pdf?forcedownload=1">Parallel.pdf</a>, slide 52</p>
+<p><a id="2">[2]</a> «Designing and Building Parallel Programs». Ian Foster. <a class="reference external" href="http://www.mcs.anl.gov/~itf/dbpp/">http://www.mcs.anl.gov/~itf/dbpp/</a></p>
+<p><a id="3">[3]</a> <a class="reference external" href="https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##Designing">Introduction to Parallel Computing Tutorial</a>, Blaise Barney, Livermore Computing (retired), Donald Frederick, LLNL, acedido em <a class="reference external" href="https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial">https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial</a> a 7 de março de 2022</p>
+<p><a id="4">[4]</a> GNU gprof, acedido em <a class="reference external" href="https://sourceware.org/binutils/docs/gprof/">https://sourceware.org/binutils/docs/gprof/</a> a 7 de março de 2022</p>
+<p><a id="5">[5]</a> gcov — a Test Coverage Program, acedido em <a class="reference external" href="https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Gcov.html#Gcov">https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Gcov.html#Gcov</a> a 7 de março de 2022</p>
 </div>
 <div class="section" id="rubricas-de-avaliacao">
 <h2>Rubricas de avaliação<a class="headerlink" href="#rubricas-de-avaliacao" title="Link permanente para este título">¶</a></h2>
-<p>Qualidade do relatório</p>
+<p>Qualidade do conteúdo revisto do relatório, nomeadamente:</p>
 <ul class="simple">
-<li><p>Forma:</p>
-<ul>
-<li><p>estrutura adequada,</p></li>
-<li><p>correção (ortográfica e gramatical) da linguagem,</p></li>
-<li><p>referências no texto,</p></li>
-<li><p>bibliografia,</p></li>
-<li><p>figuras</p></li>
-</ul>
-</li>
-<li><p>Conteúdo:</p>
-<ul>
 <li><p>descrição da metodologia</p></li>
-<li><p>descrição da estratégia de implementação</p></li>
-<li><p>avaliação de desempenho - tempo de execução, aceleração, eficiência, escalabilidade ou rácio RC</p></li>
+<li><p>descrição das etapas executadas no desenho manual de um programa paralelo</p></li>
 <li><p>discussão dos resultados</p></li>
-</ul>
-</li>
 </ul>
 </div>
 </div>
@@ -451,7 +419,7 @@ O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs/S2"
+            path: "./docs/S3"
         },
         predefinedOutput: true
     }
@@ -463,19 +431,12 @@ O ficheiro <code class="docutils literal notranslate"><span class="pre">p5.txt</
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../S1/Lab0.html" title="anterior page">
+    <a class='left-prev' id="prev-link" href="../S2/Lab1.html" title="anterior page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Lab0</p>
+            <p class="prev-next-title">Lab1</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../S3/Lab2.html" title="próximo page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">próximo</p>
-        <p class="prev-next-title">Lab2</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             

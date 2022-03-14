@@ -14,3 +14,6 @@ parts:
 - caption: S2
   chapters:
   - file: "docs/S2/Lab1"
+- caption: S3
+  chapters:
+  - file: "docs/S3/Lab2"
